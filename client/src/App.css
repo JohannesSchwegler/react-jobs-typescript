@@ -1,0 +1,52 @@
+body {
+ padding: 0 10px;
+}
+
+.job {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  margin: 20px 0;
+  padding: 30px;
+  align-items: center;
+}
+
+.job:hover {
+  cursor: pointer;
+  color: #666666;
+}
+
+.detail-logo {
+  height: 30px;
+  float: right;
+}
+
+.job-company {
+  padding: 0 30px;
+}
+
+.job-dialog {
+  padding: 30px 50px;
+}
+
+.welcome-description {
+  width: 80%;
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+.welcome-item {
+  opacity: 0;
+  transition: .5s ease all;
+}
+
+.flex-align-mid {
+
+}
+
+.job-title-location, h6, h5 {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 21px !important;
+}

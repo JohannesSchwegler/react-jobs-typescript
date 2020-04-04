@@ -1,0 +1,150 @@
+@import "typo";
+
+* {
+  box-sizing: border-box;
+}
+
+
+.jp-header-left {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: fixed;
+    height: auto;
+    right: unset !important;
+    left: 40px;
+    top: 305px !important;
+  }
+
+  @media screen and (min-width: 1600px) {
+    left: 140px;
+    top: 305px !important;
+  }
+}
+.jp {
+  &-sidebar {
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    fieldset div {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      fieldset div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+    }
+
+    fieldset {
+      width: 100%;
+      margin: 0;
+    }
+
+    label {
+      flex: 1;
+      background-color: rgb(255, 255, 255);
+
+      margin: 15px 5px;
+      padding: 15px 25px;
+
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+
+      color: #000;
+      font-weight: 500;
+      @media screen and (max-width: 1200px) {
+        flex: 0;
+      }
+    }
+  }
+  &-container {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  &-header {
+    display: flex;
+    position: relative;
+    padding: 80px 0;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    img {
+      position: relative;
+      margin: 0 auto;
+      width: 300px;
+      top: 20px;
+      right: 0;
+      @media screen and (min-width: 1200px) {
+        display: block;
+        position: fixed;
+        height: auto;
+        right: 130px;
+        top: 225px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        right: 230px;
+        top: 225px;
+           width: 400px;
+      }
+    }
+
+    h1 {
+      font-size: 25px;
+      flex: 1;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 50px;
+      }
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.job {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+  &-img-container {
+    width: 150px;
+    height: auto;
+
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
+  }
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+  color: #2d616d !important;
+}
+.MuiInputBase-input {
+  background: #fff !important;
+  padding: 15px !important;
+  border-radius: 3px;
+  margin-top: 20px !important;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 1200px) {
+    display: block !important;
+    margin: 0 0 20px !important;
+  }
+}
+
+.makeStyles-input-78 {
+  margin: 0;
+}
